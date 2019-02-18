@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
       dailyMessage: "Enter some text below to count the words.",
       words: "",
       counter: 0,
-      letters: 0,
     },
     methods: {
       countWords: function() {
