@@ -14,8 +14,8 @@
   <div id='app'>
 
     <ul>
-      <li><p>{{ dailyMessage }}</p></li> <!-- This is a declaritive template -->
-      <li><textarea rows="10" cols="50" v-model="enteredWords"></li> <!-- 'v-' = is as a vue directive -->
+      <li><p>{{ dailyMessage }}</p></li>
+      <li><textarea rows="10" cols="50" v-model="enteredWords">textarea</textarea></li>
       <li><button v-on:click="countWords">Count Words</button></li>
     </ul>
 
