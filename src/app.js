@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     methods: {
       countWords: function() {
-        this.counter = this.enteredWords.split(' ').length
-        console.log(this.counter);
+        return this.counter = this.enteredWords.split(' ').length;
       }
     }
   });
