@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="./js/bundle.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <title>W7D1-HW</title>
 </head>
 <body>
@@ -14,9 +14,12 @@
   <div id='app'>
 
     <ul>
-      <li><p>{{ dailyMessage }}</p></li>
-      <li><textarea rows="10" cols="50" v-model="enteredWords">textarea</textarea></li>
-      <li><button v-on:click="countWords">Count Words</button></li>
+      <li><h3>{{ dailyMessage }}</h3></li>
+      <li><textarea rows="10" cols="60" v-model="words">textarea</textarea></li>
+      <li>
+        <span><button class="button" v-on:click="countWords">Count Words</button></span>
+        <span><button class="button" v-on:click="clearScreen">Clear Screen</button></span>
+      </li>
     </ul>
 
     <ul>

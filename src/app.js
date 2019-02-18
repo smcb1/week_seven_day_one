@@ -5,12 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     el: "#app",
     data: {
       dailyMessage: "Enter some text below to count the words.",
-      enteredWords: "",
+      words: "",
       counter: 0,
+      letters: 0,
     },
     methods: {
       countWords: function() {
-        return this.counter = this.enteredWords.split(' ').length;
+        return this.counter = this.words.split(' ').length;
+      },
+      clearScreen: function() {
+        this.words = '';
+        this.counter = 0;
       }
     }
   });
